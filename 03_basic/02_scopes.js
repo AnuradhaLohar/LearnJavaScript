@@ -42,11 +42,37 @@
 //-------------------------------------------
 
 
-if (true) {
-    const firstname = "anju"
+// if (true) {
+//     const firstname = "anju"
 
-    if (firstname === "anju") {
-        const midname = "bansode"
+//     if (firstname === "anju") {
+//         const Mname = "prakash"
         
-    }
+//         if (Mname=== "prakash") {
+//             const lname = "bansode"
+//             console.log(firstname +" " + Mname +" " + lname);
+//         }
+    
+//         console.log(firstname + Mname);
+
+//     }
+//     console.log(firstname);
+
+//  }
+
+//---------------------------------------------------------------------------------------
+console.log(Addone(4));
+function Addone(num1){
+    return num1+1
+
 }
+
+
+//-------------------------------------------------------------------------------
+
+const AddTwo = function(num1){
+    return num1+2
+
+}
+
+console.log(AddTwo(4));
