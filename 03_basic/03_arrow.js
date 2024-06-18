@@ -46,6 +46,9 @@ const user = {
 // console.log(Adddtwo(2,3));
 
 
+// ******************************************************************************************
+
+
 
 // const Adddtwo2 = (num1,num2) => num1+num2
 // console.log(Adddtwo2(2,3));

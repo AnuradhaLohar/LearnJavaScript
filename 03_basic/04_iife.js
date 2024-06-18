@@ -7,14 +7,21 @@ function chai(){
 }
 chai();
 
+
 ///****************************************************************************** */
+
+
 (function chai1(){
     console.log(`DB CONNETION DONE`);                   /// IIFE function with function name
 })();
 
+
+
 ///******************************************************************************* */
 
- ((name)=> {
+
+
+((name)=> {
     console.log(`DB CONNTION OK ${name}`);                /// IIFE function without function name
 
 })("anu")
