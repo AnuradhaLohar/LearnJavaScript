@@ -71,6 +71,8 @@ function logginUser(Username,sname){
 
 // console.log(CalCartPrice(12,15,25));
 
+
+
 //==================================== method 3=====================
 
 
@@ -116,4 +118,4 @@ function logginUser(Username,sname){
    function handelArray(getArray){
             return getArray[2]
 }
-console.log(handelArray([100,200,300,400]));
+//console.log(handelArray([100,200,300,400]));
