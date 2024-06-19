@@ -46,7 +46,8 @@ let str2 = " Radha"
 //console.log(1 + "2");  //op = 12
 //console.log("1" + 2 + 2);  // op = 122
 // console.log(1 + 2 + "2"); // op = 32 
- // take a first string value they not adding values but u have pass last sting value they adding first two values// 
+ 
+// take a first string value they not adding values but u have pass last sting value they adding first two values// 
 
  // console.log( (3 + 4) * 5 % 3);
 

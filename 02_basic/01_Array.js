@@ -28,10 +28,10 @@ const newarr = myarr.join()
 
 // slice, splice
 
-console.log("Ajya",myarr);
+//console.log("Ajya",myarr);
 
 const myn = myarr.slice(1,3)
-console.log(myn);
+//console.log(myn);
 
 const myn2 = myarr.splice(1,3)
 console.log(myn2);   //op = 123

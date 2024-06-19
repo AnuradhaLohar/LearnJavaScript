@@ -39,7 +39,7 @@ const myFunction = function(){
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-//stack (premitive) , heap(non premitive)=> tehy gives origanl file
+//stack (premitive) , heap(non premitive)=> they gives origanl file
 
 let fname = "AD"
 let sname = fname
