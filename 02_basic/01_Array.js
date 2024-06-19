@@ -34,6 +34,6 @@ const myn = myarr.slice(1,3)
 //console.log(myn);
 
 const myn2 = myarr.splice(1,3)
-console.log(myn2);   //op = 123
+console.log(myn2);   //op = 234
 
 console.log("Anu",myarr);
