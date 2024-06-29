@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>chai aur code</h2>
+    <button>stop</button>
+</body>
+<script>
+    const hi = function() {
+        console.log("hihesh");
+        
+    }
+
+    const textchange = function(){
+        document.querySelector('h2').innerHTML = "JS is best"
+        console.log('hello');
+    }
+
+    const set = setTimeout(textchange,1000)
+
+    document.querySelector('button').addEventListener('click',function(){
+        clearTimeout(set)
+
+        document.querySelector('h2').innerHTML = "JS  "
+
+    })
+</script>
+</html>
