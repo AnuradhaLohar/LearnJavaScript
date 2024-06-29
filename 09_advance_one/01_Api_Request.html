@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+        transition: 0.3s;
+        height: auto;
+        width: 400px;
+        text-align: center;
+        }
+
+        /* On mouse-over, add a deeper shadow */
+        .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2)
+        }
+
+        /* Add some padding inside the card container */
+        .container {
+        padding: 2px 16px;
+        }
+    </style>
+
+</head>
+<body style="background-color: #212121; color: aliceblue;">
+    <!-- 0	UNSENT	Client has been created. open() not called yet.
+    1	OPENED	open() has been called.
+    2	HEADERS_RECEIVED	send() has been called, and headers and status are available.
+    3	LOADING	Downloading; responseText holds partial data.
+    4	DONE	The operation is complete. -->
+
+
+    <div class="card">
+        <img id="image"  src="" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4 id="nm" ><b></b></h4>
+          <p id="follow" ><b></b></p>
+        </div>
+        <button id="btn1">show</button>
+        <button id="btn2">Hide</button>
+      </div>
+
+
+
+</body>
+<script>
+    const requestUrl= 'https://api.github.com/users/hiteshchoudhary'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',requestUrl)
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+       
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data);
+            console.log();
+            document.querySelector('#btn1').addEventListener('click', function(e){
+                document.querySelector('#image').src = data.avatar_url
+                document.querySelector('#nm').innerHTML = `Name : ${data.name}` 
+                document.querySelector('#follow').innerHTML = `Followers : ${data.followers}` 
+            })
+        }
+
+        document.querySelector('#btn2').addEventListener('click', function(){
+            location.reload();
+        })
+    
+    xhr.send()
+</script>
+</html>
