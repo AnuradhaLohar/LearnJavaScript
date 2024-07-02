@@ -26,5 +26,7 @@ class client extends user{
 }
 
 const iphone= new client("iphone", "iphone@gmail.com")
-// iphone.logMe()
+iphone.logMe()
 console.log(iphone.createId());
+
+
