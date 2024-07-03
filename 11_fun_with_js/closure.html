@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure in js</title>
+</head>
+<body>
+   <button id="red">red</button>
+   <button id="green">green</button>
+
+</body>
+<script>
+    // function outer(){
+    //     let username="Anu"
+    //     function inner(){
+    //         console.log(username);
+    //     }
+    //     inner()
+    // } outer()
+
+
+
+
+
+//  function outer1(){
+//     let username="Ajay"
+//     function inner(){
+//         let sid ="0081"
+//         console.log("username", username);
+//         console.log("student id is",sid);
+
+        
+//     }
+    
+//     function inner1(){
+//         let name="Anu"
+//         console.log("inner1", name);
+//     }
+    
+//     inner()
+//     return inner1
+//  }
+
+
+// const u = new outer1()
+// u()
+
+
+// function makeFun(){
+//     let name="AnuRadha"
+//     function display(){
+//         console.log("name is : ",name);
+//     }
+//     return display()
+// } 
+// // const myFun=makeFun()
+// // myFun()
+
+// makeFun()
+
+
+
+
+</script>
+
+
+<script>
+    // document.getElementById('red').addEventListener('click',()=>{
+    //     document.body.style.backgroundColor = "red"
+    // })
+    // document.getElementById('green').addEventListener('click',()=>{
+    //     document.body.style.backgroundColor = "green"
+    // })
+
+    function handleClick(color){
+        document.body.style.backgroundColor = `${color}`
+    
+        return function(){
+           document.body.style.backgroundColor = `${color}`
+        }
+
+    
+    }
+    document.getElementById('red').onclick =handleClick("red")
+    document.getElementById('green').onclick =handleClick("green")
+</script>
+</html>
